@@ -5,33 +5,13 @@ using namespace std;
 int main()
 {
     char choice;
-    char choice_arr[] = {'+', '-', '*', '/', '%'};
-    bool operatorInvalid = true;
     int a, b, result = 0;
 
     cout << "------------------------------" << endl;
     cout << "calculator by @eleven" << endl;
     cout << "------------------------------" << endl;
 
-    cout << "select operator" << endl;
-    cout << "[ + - * / % ]" << endl;
-    cout << "> ";
-    cin >> choice;
-
-    for (int i = 0; i < 5; i++)
-    {
-        if (choice == choice_arr[i])
-        {
-            operatorInvalid = false;
-            break;
-        }
-    }
-
-    if (operatorInvalid)
-    {
-        cout << "invalid operator" << endl;
-        exit(0);
-    }
+    choice = getOperator();
 
     cout << "enter two operands" << endl;
     cout << "> ";
