@@ -24,6 +24,7 @@ char getOperator()
     if (operatorInvalid)
     {
         cout << "invalid operator" << endl;
+        cout << "------------------------------" << endl;
         exit(0);
     }
 
